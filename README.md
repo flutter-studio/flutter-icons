@@ -18,7 +18,9 @@ To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml fi
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
-Icon(icon:Ionicons.getIcon("ios-search"));
-Icon(icon:AntDesign.getIcon("stepforward"));
+Icon(Ionicons.getIcon("ios-search"));
+Icon(AntDesign.getIcon("stepforward"));
+Icon(FontAwesome.getIcon("glass"));
+Icon(MaterialIcons.getIcon("ac-unit"));
 ```
 ##### More Icons will be added later , welcome everyone to contribute code.
