@@ -1,6 +1,6 @@
 # flutter_icons
 
-Customizable Icons for Flutter
+Customizable Icons for Flutter,Inspired by react-native-vector-icons
 
 ## Getting Started
 
