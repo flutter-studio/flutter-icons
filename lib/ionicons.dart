@@ -13,6 +13,7 @@ class _IconData extends IconData {
       : super(
     codePoint,
     fontFamily: 'Ionicons',
+    fontPackage: "flutter_icons"
   );
 }
 final Map<String, int> _ionicons = const {
