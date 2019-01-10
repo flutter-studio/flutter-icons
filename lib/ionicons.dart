@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
-class Ionicons {
-  static getIcon(String iconName){
+class Ionicons{
+
+  static getIconData(String iconName) {
     return FlutterIconData.ionicons(_ionicons[iconName]);
   }
 }

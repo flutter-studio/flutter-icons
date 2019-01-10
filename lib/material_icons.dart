@@ -1,7 +1,7 @@
 import 'flutter_icon_data.dart';
 class MaterialIcons {
-  static getIcon(String iconName){
-    return FlutterIconData.fontAwesome(_materialIcons[iconName]);
+  static getIconData(String iconName){
+    return FlutterIconData.materialIcons(_materialIcons[iconName]);
   }
 }
 const Map<String,int> _materialIcons = {

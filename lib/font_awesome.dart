@@ -1,7 +1,7 @@
 import 'flutter_icon_data.dart';
 
 class FontAwesome {
-  static getIcon(iconName){
+  static getIconData(iconName){
     return FlutterIconData.fontAwesome(_fontAwesome[iconName]);
   }
 }

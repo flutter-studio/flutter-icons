@@ -1,6 +1,6 @@
 import 'flutter_icon_data.dart';
 class AntDesign {
-  static getIcon(iconName){
+  static getIconData(iconName){
     return FlutterIconData.antDesign(_antDesign[iconName]);
   }
 }
