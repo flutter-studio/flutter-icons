@@ -1,8 +1,8 @@
 name: flutter_icons
 description: Customizable Icons for Flutter
 version: 0.0.1
-author:
-homepage:
+author: flutter-studio<2534290808@qq.com>
+homepage: https://github.com/flutter-studio/flutter-icons.git
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
