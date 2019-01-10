@@ -1,21 +1,14 @@
 import 'package:flutter/material.dart';
-
+import 'flutter_icon_data.dart';
 class Ionicons {
-  static const IconData ios_Add = const _IconData(61698);
-  static const IconData ios_add_circle = const _IconData(61697);
-  static const IconData ios_add_circle_outline = const _IconData(61696);
-  static const IconData ios_airplane = const _IconData(61751);
+  static const IconData ios_Add = const FlutterIconData.ionicons(61698);
+  static const IconData ios_add_circle = const FlutterIconData.ionicons(61697);
+  static const IconData ios_add_circle_outline = const FlutterIconData.ionicons(61696);
+  static const IconData ios_airplane = const FlutterIconData.ionicons(61751);
+  static const IconData ios_alarm = const FlutterIconData.ionicons(62408);
+  static const IconData ios_search = const FlutterIconData.ionicons(62629);
+}
 
-  static const IconData ios_search = const _IconData(62629);
-}
-class _IconData extends IconData {
-  const _IconData(int codePoint)
-      : super(
-    codePoint,
-    fontFamily: 'Ionicons',
-    fontPackage: "flutter_icons"
-  );
-}
 final Map<String, int> _ionicons = const {
   "ios-add": 61698,
   "ios-add-circle": 61697,
