@@ -26,10 +26,10 @@ flutter:
           - asset: fonts/Ionicons.ttf
       - family: AntDesign
         fonts:
-          - asset: fonts/AntDesign.tff
+          - asset: fonts/AntDesign.ttf
       - family: FontAwesome
         fonts:
-          - asset: fonts/FontAwesome.tff
+          - asset: fonts/FontAwesome.ttf
       - family: MaterialIcons
         fonts:
           - asset: fonts/MaterialIcons.ttf
