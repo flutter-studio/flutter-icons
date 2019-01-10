@@ -10,4 +10,6 @@ class FlutterIconData extends IconData {
   const FlutterIconData.ionicons(int codePoint):this(codePoint,"Ionicons");
 
   const FlutterIconData.antDesign(int codePoint):this(codePoint,"AntDesign");
+
+  const FlutterIconData.fontAwesome(int codePoint):this(codePoint,"FontAwesome");
 }
