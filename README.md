@@ -1,18 +1,24 @@
 # flutter_icons
 
+[![pub package](https://img.shields.io/pub/v/flutter_icons.svg)](https://pub.dartlang.org/packages/flutter_icons)
+
 Customizable Icons for Flutter,Inspired by react-native-vector-icons
 
 ## Notice
 
 This project is under development, there is no stable version at present, we do not recommend you to use in production for the time being, welcome everyone to contribute code.
 
-## Getting Started
+## Usage
+To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Example
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+``` dart
+// Import package
+import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter/material.dart';
+
+Icon(icon:Ionicons.ios_search);
+Icon(icon:AntDesign.stepForward);
+```
+##### More Icons will be added later , welcome everyone to contribute code.
