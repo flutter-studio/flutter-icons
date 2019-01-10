@@ -2,6 +2,10 @@
 
 Customizable Icons for Flutter,Inspired by react-native-vector-icons
 
+## Notice
+
+This project is under development, there is no stable version at present, we do not recommend you to use in production for the time being, welcome everyone to contribute code.
+
 ## Getting Started
 
 This project is a starting point for a Dart
