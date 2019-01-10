@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 class Ionicons {
-  static const IconData ios_Add = const FlutterIconData.ionicons(61698);
-  static const IconData ios_add_circle = const FlutterIconData.ionicons(61697);
-  static const IconData ios_add_circle_outline = const FlutterIconData.ionicons(61696);
-  static const IconData ios_airplane = const FlutterIconData.ionicons(61751);
-  static const IconData ios_alarm = const FlutterIconData.ionicons(62408);
-  static const IconData ios_search = const FlutterIconData.ionicons(62629);
+  static getIcon(String iconName){
+    return FlutterIconData.ionicons(_ionicons[iconName]);
+  }
 }
 
 final Map<String, int> _ionicons = const {

@@ -1,12 +1,12 @@
 import 'flutter_icon_data.dart';
-import 'package:flutter/material.dart';
 class AntDesign {
-  static const IconData stepForward = const FlutterIconData.antDesign(58880);
-  static const IconData stepBackward = const FlutterIconData.antDesign(58881);
+  static getIcon(iconName){
+    return FlutterIconData.antDesign(_antDesign[iconName]);
+  }
 }
 
 
-final Map<String,int> ant_design ={
+final Map<String,int> _antDesign ={
   "stepforward": 58880,
   "stepbackward": 58881,
   "forward": 58882,
