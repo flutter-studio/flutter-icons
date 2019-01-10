@@ -18,7 +18,7 @@ To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml fi
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
-Icon(icon:Ionicons.ios_search);
-Icon(icon:AntDesign.stepForward);
+Icon(icon:Ionicons.getIcon("ios-search"));
+Icon(icon:AntDesign.getIcon("stepforward"));
 ```
 ##### More Icons will be added later , welcome everyone to contribute code.
