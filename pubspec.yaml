@@ -20,7 +20,19 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
+  fonts:
+      - family: Ionicons
+        fonts:
+          - asset: fonts/Ionicons.ttf
+      - family: AntDesign
+        fonts:
+          - asset: fonts/AntDesign.tff
+      - family: FontAwesome
+        fonts:
+          - asset: fonts/FontAwesome.tff
+      - family: MaterialIcons
+        fonts:
+          - asset: fonts/MaterialIcons.ttf
   # To add assets to your package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
