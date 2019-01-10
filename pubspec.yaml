@@ -33,6 +33,30 @@ flutter:
       - family: MaterialIcons
         fonts:
           - asset: fonts/MaterialIcons.ttf
+      - family: Entypo
+        fonts:
+          - asset: fonts/Entypo.ttf
+      - family: EvilIcons
+        fonts:
+          - asset: fonts/EvilIcons.ttf
+      - family: Feather
+        fonts:
+          - asset: fonts/Feather.ttf
+      - family: Foundation
+        fonts:
+          - asset: fonts/Foundation.ttf
+      - family: MaterialCommunityIcons
+        fonts:
+          - asset: fonts/MaterialCommunityIcons.ttf
+      - family: Octicons
+        fonts:
+          - asset: fonts/Octicons.ttf
+      - family: SimpleLineIcons
+        fonts:
+          - asset: fonts/SimpleLineIcons.ttf
+      - family: Zocial
+        fonts:
+          - asset: fonts/Zocial.ttf
   # To add assets to your package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
