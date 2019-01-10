@@ -1,7 +1,7 @@
 import 'flutter_icon_data.dart';
 
 class EvilIcons {
-  getIconData(String iconName){
+  static getIconData(String iconName){
     return FlutterIconData.evilIcons(_evilIcons[iconName]);
   }
 }
