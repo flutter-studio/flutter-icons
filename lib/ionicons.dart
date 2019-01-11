@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 class Ionicons{
 
