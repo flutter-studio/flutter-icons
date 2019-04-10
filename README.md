@@ -33,9 +33,9 @@ To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml fi
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
-Icon(Ionicons.getIcon("ios-search"));
-Icon(AntDesign.getIcon("stepforward"));
-Icon(FontAwesome.getIcon("glass"));
-Icon(MaterialIcons.getIcon("ac-unit"));
+Icon(Ionicons.getIconData("ios-search"));
+Icon(AntDesign.getIconData("stepforward"));
+Icon(FontAwesome.getIconData("glass"));
+Icon(MaterialIcons.getIconData("ac-unit"));
 ```
 ### Special thanks to react native vector ICONS library and its authors
