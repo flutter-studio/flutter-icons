@@ -33,9 +33,9 @@
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
-Icon(Ionicons.getIconData("ios-search"));
-Icon(AntDesign.getIconData("stepforward"));
-Icon(FontAwesome.getIconData("glass"));
-Icon(MaterialIcons.getIconData("ac-unit"));
+Icon(Ionicons.getIcon("ios-search"));
+Icon(AntDesign.getIcon("stepforward"));
+Icon(FontAwesome.getIcon("glass"));
+Icon(MaterialIcons.getIcon("ac-unit"));
 ```
 ### 特别感谢react-native-vector-icons插件包及其开发者们
