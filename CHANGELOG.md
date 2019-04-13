@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## 0.0.1
 
-* TODO: Describe initial release.
+    * This library contains several icon libraries, including the well-known ant-design icon library, material icon library, and so on
