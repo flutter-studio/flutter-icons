@@ -1,5 +1,5 @@
 ## 0.1.3
-   * Foundation added(#1)
+   * Foundation added
    
 ## 0.1.0
 
