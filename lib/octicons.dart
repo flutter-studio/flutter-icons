@@ -4,6 +4,8 @@ class Octicons {
   static getIconData(String iconName){
     return FlutterIconData.octicons(_octicons[iconName]);
   }
+
+  static hasIconData(iconName)=>_octicons.containsKey(iconName);
 }
 const Map<String,int> _octicons ={
   "alert": 61696,

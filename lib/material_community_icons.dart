@@ -4,6 +4,8 @@ class MaterialCommunityIcons {
   static getIconData(String iconName){
     return FlutterIconData.materialCommunityIcons(_materialCommunityIcons[iconName]);
   }
+
+  static hasIconData(iconName)=>_materialCommunityIcons.containsKey(iconName);
 }
 
 const Map<String,int> _materialCommunityIcons = {

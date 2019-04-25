@@ -3,6 +3,8 @@ class Zocial {
   static getIconData(String iconName){
     return FlutterIconData.zocial(_zocial[iconName]);
   }
+
+  static hasIconData(iconName)=>_zocial.containsKey(iconName);
 }
 const Map<String,int> _zocial = {
   "acrobat": 61696,

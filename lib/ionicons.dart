@@ -1,12 +1,15 @@
 import 'flutter_icon_data.dart';
+import 'package:flutter/material.dart';
 class Ionicons{
 
   static getIconData(String iconName) {
     return FlutterIconData.ionicons(_ionicons[iconName]);
   }
+
+  static hasIconData(iconName)=>_ionicons.containsKey(iconName);
 }
 
-final Map<String, int> _ionicons = const {
+const Map<String, int> _ionicons = const {
   "ios-add": 61698,
   "ios-add-circle": 61697,
   "ios-add-circle-outline": 61696,

@@ -3,6 +3,8 @@ class MaterialIcons {
   static getIconData(String iconName){
     return FlutterIconData.materialIcons(_materialIcons[iconName]);
   }
+  static hasIconData(iconName)=>_materialIcons.containsKey(iconName);
+
 }
 const Map<String,int> _materialIcons = {
   "3d-rotation": 59469,

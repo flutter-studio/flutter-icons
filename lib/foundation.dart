@@ -4,6 +4,8 @@ class Foundation {
   static getIconData(String iconName){
     return FlutterIconData.foundation(_foundation[iconName]);
   }
+
+  static hasIconData(iconName)=>_foundation.containsKey(iconName);
 }
 const Map<String,int> _foundation = {
   "address-book": 61696,

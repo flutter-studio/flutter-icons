@@ -4,6 +4,8 @@ class Entypo {
   static getIconData(String iconName){
     return FlutterIconData.entypo(_entypo[iconName]);
   }
+
+  static hasIconData(iconName)=>_entypo.containsKey(iconName);
 }
 const Map<String,int> _entypo ={
   "500px": 61696,

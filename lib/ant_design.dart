@@ -3,6 +3,8 @@ class AntDesign {
   static getIconData(iconName){
     return FlutterIconData.antDesign(_antDesign[iconName]);
   }
+
+  static hasIconData(iconName)=>_antDesign.containsKey(iconName);
 }
 
 

@@ -4,6 +4,8 @@ class EvilIcons {
   static getIconData(String iconName){
     return FlutterIconData.evilIcons(_evilIcons[iconName]);
   }
+
+  static hasIconData(iconName)=>_evilIcons.containsKey(iconName);
 }
 const Map<String, int> _evilIcons = {
   "archive": 61696,

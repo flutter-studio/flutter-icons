@@ -4,6 +4,8 @@ class FontAwesome {
   static getIconData(iconName){
     return FlutterIconData.fontAwesome(_fontAwesome[iconName]);
   }
+
+  static hasIconData(iconName)=>_fontAwesome.containsKey(iconName);
 }
 const Map<String ,int> _fontAwesome = {
   "glass": 61440,

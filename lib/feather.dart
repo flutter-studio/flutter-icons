@@ -4,6 +4,8 @@ class Feather {
   static getIconData(String iconName){
     return FlutterIconData.feather(_feather[iconName]);
   }
+
+  static hasIconData(iconName)=>_feather.containsKey(iconName);
 }
 const Map<String,int> _feather ={
   "activity": 59648,

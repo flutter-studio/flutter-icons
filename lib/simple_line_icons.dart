@@ -4,6 +4,8 @@ class SimpleLineIcons {
   static getIconData(String iconName){
     return FlutterIconData.simpleLineIcons(_simpleLineIcons[iconName]);
   }
+
+  static hasIconData(iconName)=>_simpleLineIcons.containsKey(iconName);
 }
 const Map<String,int> _simpleLineIcons = {
   "user": 57349,
