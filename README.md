@@ -26,6 +26,13 @@ Customizable Icons for Flutter,Inspired by [react-native-vector-icons](https://g
 ## Usage
 To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
+## Static Methods
+
+| Prop                 | Description                                                                                                                                                                               |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`getIconData`**  | Returns the IconData object,eg : ```IconData iconData = AntDesign.getIconData("stepforward")``` |
+| **`hasIconData`**  | Checks if the name is valid in current icon set.eg: ```bool isNameValid = AntDesign.hasIconData("stepforward")```|
+
 ## Example
 
 ``` dart

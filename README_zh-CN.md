@@ -26,6 +26,13 @@
 ## 使用
 要使用此插件包,请将flutter_icons作为依赖项添加到您的`pubspec.yaml`文件中,详见[dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
+## 静态方法
+
+| Prop                 | Description                                                                                                                                                                               |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`getIconData`**  | 返回IconData对象供Icon使用,eg : ```IconData iconData = AntDesign.getIconData("stepforward")``` |
+| **`hasIconData`**  | 检查是否存在name对应的IconData对象，返回布尔值，eg: ```bool isNameValid = AntDesign.hasIconData("stepforward")```|
+
 ## 示例
 
 ``` dart
