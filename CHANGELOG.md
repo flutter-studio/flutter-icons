@@ -1,3 +1,6 @@
+## 0.1.4
+   * Add hasIconData method
+
 ## 0.1.3
    * Foundation added
    
