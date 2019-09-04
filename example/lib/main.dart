@@ -45,7 +45,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -80,6 +79,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Icon(FontAwesome5.getIconData("address-book")),
+            Icon(FontAwesome5.getIconData("address-book",
+                weight: IconWeight.Solid)),
+            Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand)),
             Icon(Ionicons.getIconData("ios-search")),
             Icon(AntDesign.getIconData("stepforward")),
             Icon(FontAwesome.getIconData("glass")),

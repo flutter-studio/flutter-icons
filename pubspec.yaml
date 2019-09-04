@@ -1,6 +1,6 @@
 name: flutter_icons
 description: Customizable Icons for Flutter，you can use with over 3K+ icons in your flutter project
-version: 0.1.5
+version: 0.2.0
 author: flutter-studio<2534290808@qq.com>
 homepage: https://github.com/flutter-studio/flutter-icons.git
 
@@ -57,6 +57,16 @@ flutter:
       - family: Zocial
         fonts:
           - asset: fonts/Zocial.ttf
+      - family: FontAwesome5
+        fonts:
+          - asset: fonts/FontAwesome5_Regular.ttf
+      - family: FontAwesome5_Brands
+        fonts:
+          - asset: fonts/FontAwesome5_Brands.ttf
+      - family: FontAwesome5_Solid
+        fonts:
+          - asset: fonts/FontAwesome5_Solid.ttf
+
   # To add assets to your package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
