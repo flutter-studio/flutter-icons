@@ -1,3 +1,6 @@
+## 0.2.0
+   * FontAwesome5_Free added
+
 ## 0.1.5
    * Update MaterialCommunityIcons to version 4.0.96
 
