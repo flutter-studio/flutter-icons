@@ -1,3 +1,6 @@
+## 0.1.5
+   * Update MaterialCommunityIcons to version 4.0.96
+
 ## 0.1.4
    * Add hasIconData method
 
