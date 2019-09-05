@@ -45,6 +45,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool _value = false;
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -87,6 +88,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Icon(AntDesign.getIconData("stepforward")),
             Icon(FontAwesome.getIconData("glass")),
             Icon(MaterialIcons.getIconData("ac-unit")),
+            IconToggle(
+              value: _value,
+              onChanged: (value) {
+                setState(() {
+                  _value = value;
+                });
+              },
+            ),
           ],
         ),
       ),
