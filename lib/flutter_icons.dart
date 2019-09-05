@@ -14,3 +14,4 @@ export 'zocial.dart';
 export 'foundation.dart';
 export 'font_awesome_5.dart';
 export 'flutter_icon_data.dart' show IconWeight;
+export 'icon_toggle.dart';
