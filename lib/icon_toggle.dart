@@ -41,6 +41,7 @@ class _IconToggleState extends State<IconToggle>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation<double> _position;
+  bool _cancel = false;
 
   @override
   void initState() {
@@ -51,7 +52,9 @@ class _IconToggleState extends State<IconToggle>
         reverseDuration: Duration(milliseconds: 50));
     _position = CurvedAnimation(parent: _controller, curve: Curves.linear);
     _position.addStatusListener((status) {
-      if (status == AnimationStatus.dismissed && widget.onChanged != null) {
+      if (status == AnimationStatus.dismissed &&
+          widget.onChanged != null &&
+          _cancel == false) {
         widget.onChanged(!widget.value);
       }
     });
@@ -66,25 +69,34 @@ class _IconToggleState extends State<IconToggle>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      behavior: HitTestBehavior.opaque,
       onTapDown: (event) {
+        _cancel = false;
         _controller?.forward();
       },
       onTapUp: (event) {
         _controller?.reverse();
       },
-      child: _IconToggleable<double>(
-        listenable: _position,
-        activeColor: widget.activeColor,
-        inactiveColor: widget.inactiveColor,
-        child: AnimatedSwitcher(
-          duration: widget.duration,
-          reverseDuration: widget.reverseDuration,
-          transitionBuilder: widget.transitionBuilder,
-          child: Icon(
-            widget.value ? widget.checkedIconData : widget.uncheckedIconData,
-            color: widget.value ? widget.activeColor : widget.inactiveColor,
-            size: 22,
-            key: ValueKey<bool>(widget.value),
+      onTapCancel: () {
+        _cancel = true;
+        _controller?.reverse();
+      },
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: _IconToggleable<double>(
+          listenable: _position,
+          activeColor: widget.activeColor,
+          inactiveColor: widget.inactiveColor,
+          child: AnimatedSwitcher(
+            duration: widget.duration,
+            reverseDuration: widget.reverseDuration,
+            transitionBuilder: widget.transitionBuilder,
+            child: Icon(
+              widget.value ? widget.checkedIconData : widget.uncheckedIconData,
+              color: widget.value ? widget.activeColor : widget.inactiveColor,
+              size: 22,
+              key: ValueKey<bool>(widget.value),
+            ),
           ),
         ),
       ),
@@ -131,7 +143,7 @@ class _IconPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final Paint paint = Paint()
       ..color = Color.lerp(inactiveColor, activeColor, _value)
-          .withOpacity(math.min(_value, 0.1))
+          .withOpacity(math.min(_value, 0.15))
       ..style = PaintingStyle.fill
       ..strokeWidth = 2.0;
     canvas.drawCircle(
