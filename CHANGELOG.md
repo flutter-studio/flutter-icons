@@ -1,3 +1,6 @@
+## 0.2.5
+   * IconToggle added
+
 ## 0.2.0
    * FontAwesome5_Free added
 
