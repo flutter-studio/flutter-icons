@@ -14,8 +14,8 @@ Widget _defaultTransitionBuilder(Widget child, Animation<double> animation) =>
 
 class IconToggle extends StatefulWidget {
   IconToggle({
-    this.uncheckedIconData = Icons.radio_button_unchecked,
-    this.checkedIconData = Icons.radio_button_checked,
+    this.unselectedIconData = Icons.radio_button_unchecked,
+    this.selectedIconData = Icons.radio_button_checked,
     this.activeColor = Colors.blue,
     this.inactiveColor = Colors.grey,
     this.value = false,
@@ -24,8 +24,8 @@ class IconToggle extends StatefulWidget {
     this.duration = const Duration(milliseconds: 100),
     this.reverseDuration,
   });
-  final IconData checkedIconData;
-  final IconData uncheckedIconData;
+  final IconData selectedIconData;
+  final IconData unselectedIconData;
   final Color activeColor;
   final Color inactiveColor;
   final bool value;
@@ -92,7 +92,7 @@ class _IconToggleState extends State<IconToggle>
             reverseDuration: widget.reverseDuration,
             transitionBuilder: widget.transitionBuilder,
             child: Icon(
-              widget.value ? widget.checkedIconData : widget.uncheckedIconData,
+              widget.value ? widget.selectedIconData : widget.unselectedIconData,
               color: widget.value ? widget.activeColor : widget.inactiveColor,
               size: 22,
               key: ValueKey<bool>(widget.value),

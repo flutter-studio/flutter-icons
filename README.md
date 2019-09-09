@@ -27,6 +27,24 @@ Customizable Icons for Flutter,Inspired by [react-native-vector-icons](https://g
 ## Usage
 To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
+## Widget
+
+### IconToggle
+
+| Prop                 | Description                                                                                                                                                                               |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| selectedIconData  | Icon is displayed when value is true |
+| unselectedIconData | Icon is displayed when value is false |
+| activeColor | When value is true, the icon color is displayed |
+| inactiveColor | When value is false, the icon color is displayed |
+| value| Whether this IconToggle is selected. |
+| onChanged | Called when the value of the IconToggle should change. |
+| duration| The duration of the transition from selected Icon to unselected Icon |
+| reverseDuration | he duration of the transition from unselected Icon to selected Icon |
+| transitionBuilder | Transition animation function between the selected Icon and the unselected Icon |
+
+
+
 ## Static Methods
 
 | Prop                 | Description                                                                                                                                                                               |
