@@ -5,10 +5,13 @@ class AntDesign {
   }
 
   static hasIconData(iconName)=>_antDesign.containsKey(iconName);
+
+  static const glyphMaps = _antDesign;
 }
 
 
-final Map<String,int> _antDesign ={
+
+const Map<String,int> _antDesign ={
   "stepforward": 58880,
   "stepbackward": 58881,
   "forward": 58882,

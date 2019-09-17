@@ -6,6 +6,8 @@ class EvilIcons {
   }
 
   static hasIconData(iconName)=>_evilIcons.containsKey(iconName);
+
+  static const glyphMaps = _evilIcons;
 }
 const Map<String, int> _evilIcons = {
   "archive": 61696,

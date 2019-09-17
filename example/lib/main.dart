@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'ant_design_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,22 +22,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Icons Explorer'),
+      routes: {
+        "icon_page":(_)=>AntDesignPage()
+      },
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   final String title;
 
@@ -45,7 +40,53 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool _value = false;
+  buildChildren() {
+    Map<String, dynamic> map = {
+      "AntDesign": AntDesign.glyphMaps,
+      "Entypo": Entypo.glyphMaps,
+      "EvilIcons": EvilIcons.glyphMaps,
+      "Feather":  Feather.glyphMaps,
+      "FontAwesome":FontAwesome.glyphMaps,
+      "Foundation": Foundation.glyphMaps,
+      "Ionicons": Ionicons.glyphMaps,
+      "MaterialCommunityIcons": MaterialCommunityIcons.glyphMaps,
+      "MaterialIcons": MaterialIcons.glyphMaps,
+      "Octicons": Octicons.glyphMaps,
+      "SimpleLineIcons": SimpleLineIcons.glyphMaps,
+      "Zocial":Zocial.glyphMaps
+    };
+    List<Widget> widgets = [];
+    for (int i = 0; i < map.keys.length; i++) {
+      widgets.add(GestureDetector(
+        onTap: (){
+          Navigator.of(context).pushNamed("icon_page",arguments: {
+            "glyphMaps":map[map.keys.elementAt(i)],
+            "iconSetName":map.keys.elementAt(i)
+          });
+        },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(map.keys.elementAt(i)),
+              Spacer(),
+              Text(map[map.keys.elementAt(i)].length.toString()),
+              Icon(Icons.arrow_forward_ios)
+            ],
+          ),
+        ),
+      ));
+      if (i != map.keys.length - 1) {
+        widgets.add(Container(
+          height: 1,
+          color: Colors.black.withOpacity(0.3),
+        ));
+      }
+    }
+    return widgets;
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -60,43 +101,11 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
         child: Column(
-          // Column is also layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(FontAwesome5.getIconData("address-book")),
-            Icon(FontAwesome5.getIconData("address-book",
-                weight: IconWeight.Solid)),
-            Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand)),
-            Icon(Ionicons.getIconData("ios-search")),
-            Icon(AntDesign.getIconData("stepforward")),
-            Icon(FontAwesome.getIconData("glass")),
-            Icon(MaterialIcons.getIconData("ac-unit")),
-            IconToggle(
-              value: _value,
-              onChanged: (value) {
-                setState(() {
-                  _value = value;
-                });
-              },
-            ),
-          ],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: buildChildren(),
         ),
       ),
     );

@@ -6,6 +6,8 @@ class Octicons {
   }
 
   static hasIconData(iconName)=>_octicons.containsKey(iconName);
+
+  static const glyphMaps = _octicons;
 }
 const Map<String,int> _octicons ={
   "alert": 61696,

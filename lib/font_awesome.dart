@@ -6,6 +6,8 @@ class FontAwesome {
   }
 
   static hasIconData(iconName)=>_fontAwesome.containsKey(iconName);
+
+  static const glyphMaps = _fontAwesome;
 }
 const Map<String ,int> _fontAwesome = {
   "glass": 61440,

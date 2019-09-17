@@ -6,6 +6,8 @@ class Feather {
   }
 
   static hasIconData(iconName)=>_feather.containsKey(iconName);
+
+  static const glyphMaps = _feather;
 }
 const Map<String,int> _feather ={
   "activity": 59648,

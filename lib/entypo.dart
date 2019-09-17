@@ -6,7 +6,10 @@ class Entypo {
   }
 
   static hasIconData(iconName)=>_entypo.containsKey(iconName);
+
+  static const glyphMaps = _entypo;
 }
+
 const Map<String,int> _entypo ={
   "500px": 61696,
   "500px-with-circle": 61697,

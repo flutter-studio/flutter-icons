@@ -7,7 +7,10 @@ class Ionicons{
   }
 
   static hasIconData(iconName)=>_ionicons.containsKey(iconName);
+
+  static const glyphMaps = _ionicons;
 }
+
 
 const Map<String, int> _ionicons = const {
   "ios-add": 61698,

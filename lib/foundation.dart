@@ -6,6 +6,8 @@ class Foundation {
   }
 
   static hasIconData(iconName)=>_foundation.containsKey(iconName);
+
+  static const glyphMaps = _foundation;
 }
 const Map<String,int> _foundation = {
   "address-book": 61696,

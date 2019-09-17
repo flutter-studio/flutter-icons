@@ -6,8 +6,9 @@ class MaterialCommunityIcons {
   }
 
   static hasIconData(iconName)=>_materialCommunityIcons.containsKey(iconName);
-}
 
+  static const glyphMaps = _materialCommunityIcons;
+}
 const Map<String,int> _materialCommunityIcons = {
   "ab-testing": 983068,
   "access-point": 61442,

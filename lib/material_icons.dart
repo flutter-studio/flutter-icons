@@ -5,6 +5,8 @@ class MaterialIcons {
   }
   static hasIconData(iconName)=>_materialIcons.containsKey(iconName);
 
+  static const glyphMaps = _materialIcons;
+
 }
 const Map<String,int> _materialIcons = {
   "3d-rotation": 59469,

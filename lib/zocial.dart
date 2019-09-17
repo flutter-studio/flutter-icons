@@ -5,6 +5,8 @@ class Zocial {
   }
 
   static hasIconData(iconName)=>_zocial.containsKey(iconName);
+
+  static const glyphMaps = _zocial;
 }
 const Map<String,int> _zocial = {
   "acrobat": 61696,

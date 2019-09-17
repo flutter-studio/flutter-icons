@@ -6,6 +6,8 @@ class SimpleLineIcons {
   }
 
   static hasIconData(iconName)=>_simpleLineIcons.containsKey(iconName);
+
+  static const glyphMaps = _simpleLineIcons;
 }
 const Map<String,int> _simpleLineIcons = {
   "user": 57349,
