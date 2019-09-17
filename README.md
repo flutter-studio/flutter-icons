@@ -52,6 +52,15 @@ To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml fi
 | **`getIconData`**  | Returns the IconData object,eg : ```IconData iconData = AntDesign.getIconData("stepforward")``` |
 | **`hasIconData`**  | Checks if the name is valid in current icon set.eg: ```bool isNameValid = AntDesign.hasIconData("stepforward")```|
 
+
+## IconExplorer
+
+Try to run the `example` project Or download [apk](https://github.com/flutter-studio/flutter-icons/tree/master/example/apk/app-release.apk), there you can also search for any icon.
+
+<div align=start>
+<img src="https://github.com/flutter-studio/flutter-icons/blob/master/example/Screenshot_1568714360.png" width = "200" alt="图片名称" align=center />
+  </div>
+
 ## Example
 
 ``` dart
