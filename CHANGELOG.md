@@ -1,3 +1,6 @@
+## 0.3.0
+   * WeatherIcons added
+
 ## 0.2.5
    * IconToggle added
 
