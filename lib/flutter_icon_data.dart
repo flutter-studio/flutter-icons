@@ -45,4 +45,6 @@ class FlutterIconData extends IconData {
       : this(codePoint, "SimpleLineIcons");
 
   const FlutterIconData.zocial(int codePoint) : this(codePoint, "Zocial");
+
+  const FlutterIconData.weatherIcons(int codePoint) : this(codePoint,"WeatherIcons");
 }

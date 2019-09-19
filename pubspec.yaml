@@ -66,6 +66,9 @@ flutter:
       - family: FontAwesome5_Solid
         fonts:
           - asset: fonts/FontAwesome5_Solid.ttf
+      - family: WeatherIcons
+        fonts:
+          - asset: fonts/weathericons.ttf
 
   # To add assets to your package, add an assets section, like this:
   # assets:
