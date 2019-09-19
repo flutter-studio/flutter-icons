@@ -23,6 +23,7 @@ Customizable Icons for Flutter,Inspired by [react-native-vector-icons](https://g
 * [`Octicons`](http://octicons.github.com) by Github, Inc. (v8.0.0, **177** icons)
 * [`Zocial`](http://zocial.smcllns.com/) by Sam Collins (v1.0, **100** icons)
 * [`SimpleLineIcons`](https://simplelineicons.github.io/) by Sabbir & Contributors (v2.4.1, **189** icons)
+* [`Weather Icons`](https://erikflowers.github.io/weather-icons/) by erikflowers (v2.0.10, **596** icons)
 
 ## Usage
 To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
