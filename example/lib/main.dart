@@ -53,7 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
       "MaterialIcons": MaterialIcons.glyphMaps,
       "Octicons": Octicons.glyphMaps,
       "SimpleLineIcons": SimpleLineIcons.glyphMaps,
-      "Zocial":Zocial.glyphMaps
+      "Zocial":Zocial.glyphMaps,
+      "WeatherIcons": WeatherIcons.glyphMaps
     };
     List<Widget> widgets = [];
     for (int i = 0; i < map.keys.length; i++) {

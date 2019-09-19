@@ -36,6 +36,8 @@ class _AntDesignPageState extends State<AntDesignPage> {
         return SimpleLineIcons.getIconData(iconName);
       case "Zocial":
         return Zocial.getIconData(iconName);
+      case "WeatherIcons":
+        return WeatherIcons.getIconData(iconName);
     }
   }
 
