@@ -1,3 +1,6 @@
+## 0.3.1
+   * File movement and adding assertions
+
 ## 0.3.0
    * WeatherIcons added
 
