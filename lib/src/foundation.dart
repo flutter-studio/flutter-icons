@@ -1,15 +1,20 @@
 import 'flutter_icon_data.dart';
 
 class Foundation {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the Foundation",
+    );
     return FlutterIconData.foundation(_foundation[iconName]);
   }
 
-  static hasIconData(iconName)=>_foundation.containsKey(iconName);
+  static hasIconData(iconName) => _foundation.containsKey(iconName);
 
   static const glyphMaps = _foundation;
 }
-const Map<String,int> _foundation = {
+
+const Map<String, int> _foundation = {
   "address-book": 61696,
   "alert": 61697,
   "align-center": 61698,

@@ -1,16 +1,20 @@
 import 'flutter_icon_data.dart';
 
 class Entypo {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the Entypo",
+    );
     return FlutterIconData.entypo(_entypo[iconName]);
   }
 
-  static hasIconData(iconName)=>_entypo.containsKey(iconName);
+  static hasIconData(iconName) => _entypo.containsKey(iconName);
 
   static const glyphMaps = _entypo;
 }
 
-const Map<String,int> _entypo ={
+const Map<String, int> _entypo = {
   "500px": 61696,
   "500px-with-circle": 61697,
   "add-to-list": 61698,

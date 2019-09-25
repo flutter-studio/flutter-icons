@@ -1,14 +1,19 @@
 import 'flutter_icon_data.dart';
 
 class EvilIcons {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the EvilIcons",
+    );
     return FlutterIconData.evilIcons(_evilIcons[iconName]);
   }
 
-  static hasIconData(iconName)=>_evilIcons.containsKey(iconName);
+  static hasIconData(iconName) => _evilIcons.containsKey(iconName);
 
   static const glyphMaps = _evilIcons;
 }
+
 const Map<String, int> _evilIcons = {
   "archive": 61696,
   "arrow-down": 61697,

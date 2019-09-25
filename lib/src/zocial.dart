@@ -1,14 +1,20 @@
 import 'flutter_icon_data.dart';
+
 class Zocial {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the Zocial",
+    );
     return FlutterIconData.zocial(_zocial[iconName]);
   }
 
-  static hasIconData(iconName)=>_zocial.containsKey(iconName);
+  static hasIconData(iconName) => _zocial.containsKey(iconName);
 
   static const glyphMaps = _zocial;
 }
-const Map<String,int> _zocial = {
+
+const Map<String, int> _zocial = {
   "acrobat": 61696,
   "amazon": 61697,
   "android": 61698,

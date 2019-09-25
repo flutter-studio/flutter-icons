@@ -1,15 +1,21 @@
 import 'flutter_icon_data.dart';
 
 class MaterialCommunityIcons {
-  static getIconData(String iconName){
-    return FlutterIconData.materialCommunityIcons(_materialCommunityIcons[iconName]);
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the MaterialCommunityIcons",
+    );
+    return FlutterIconData.materialCommunityIcons(
+        _materialCommunityIcons[iconName]);
   }
 
-  static hasIconData(iconName)=>_materialCommunityIcons.containsKey(iconName);
+  static hasIconData(iconName) => _materialCommunityIcons.containsKey(iconName);
 
   static const glyphMaps = _materialCommunityIcons;
 }
-const Map<String,int> _materialCommunityIcons = {
+
+const Map<String, int> _materialCommunityIcons = {
   "ab-testing": 983068,
   "access-point": 61442,
   "access-point-network": 61443,

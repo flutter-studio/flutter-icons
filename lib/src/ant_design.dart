@@ -1,17 +1,20 @@
 import 'flutter_icon_data.dart';
+
 class AntDesign {
-  static getIconData(iconName){
+  static getIconData(iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the AntDesign",
+    );
     return FlutterIconData.antDesign(_antDesign[iconName]);
   }
 
-  static hasIconData(iconName)=>_antDesign.containsKey(iconName);
+  static hasIconData(iconName) => _antDesign.containsKey(iconName);
 
   static const glyphMaps = _antDesign;
 }
 
-
-
-const Map<String,int> _antDesign ={
+const Map<String, int> _antDesign = {
   "stepforward": 58880,
   "stepbackward": 58881,
   "forward": 58882,

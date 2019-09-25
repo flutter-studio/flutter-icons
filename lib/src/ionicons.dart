@@ -1,16 +1,18 @@
 import 'flutter_icon_data.dart';
-import 'package:flutter/material.dart';
-class Ionicons{
 
+class Ionicons {
   static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the Ionicons",
+    );
     return FlutterIconData.ionicons(_ionicons[iconName]);
   }
 
-  static hasIconData(iconName)=>_ionicons.containsKey(iconName);
+  static hasIconData(iconName) => _ionicons.containsKey(iconName);
 
   static const glyphMaps = _ionicons;
 }
-
 
 const Map<String, int> _ionicons = const {
   "ios-add": 61698,

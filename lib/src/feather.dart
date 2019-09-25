@@ -1,15 +1,20 @@
 import 'flutter_icon_data.dart';
 
 class Feather {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the Feather",
+    );
     return FlutterIconData.feather(_feather[iconName]);
   }
 
-  static hasIconData(iconName)=>_feather.containsKey(iconName);
+  static hasIconData(iconName) => _feather.containsKey(iconName);
 
   static const glyphMaps = _feather;
 }
-const Map<String,int> _feather ={
+
+const Map<String, int> _feather = {
   "activity": 59648,
   "airplay": 59649,
   "alert-circle": 59650,

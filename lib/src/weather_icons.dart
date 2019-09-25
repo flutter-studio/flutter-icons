@@ -2,6 +2,10 @@ import 'flutter_icon_data.dart';
 
 class WeatherIcons {
   static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the WeatherIcons",
+    );
     return FlutterIconData.weatherIcons(_weatherIcons[iconName]);
   }
 

@@ -1,14 +1,20 @@
 import 'flutter_icon_data.dart';
+
 class MaterialIcons {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the MaterialIcons",
+    );
     return FlutterIconData.materialIcons(_materialIcons[iconName]);
   }
-  static hasIconData(iconName)=>_materialIcons.containsKey(iconName);
+
+  static hasIconData(iconName) => _materialIcons.containsKey(iconName);
 
   static const glyphMaps = _materialIcons;
-
 }
-const Map<String,int> _materialIcons = {
+
+const Map<String, int> _materialIcons = {
   "3d-rotation": 59469,
   "ac-unit": 60219,
   "access-alarm": 57744,

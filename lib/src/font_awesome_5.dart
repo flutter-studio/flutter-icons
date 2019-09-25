@@ -1,7 +1,11 @@
 import 'flutter_icon_data.dart';
 
 class FontAwesome5 {
-  static getIconData(iconName, {IconWeight weight}) {
+  static getIconData(iconName, {IconWeight weight = IconWeight.Regular}) {
+    assert(
+      hasIconData(iconName, weight: weight),
+      "The icon $iconName does not exist in the FontAwesome5($weight)",
+    );
     return FlutterIconData.fontAwesome5(_fontAwesome5[iconName],
         weight: weight);
   }

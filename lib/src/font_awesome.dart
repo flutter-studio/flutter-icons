@@ -1,15 +1,20 @@
 import 'flutter_icon_data.dart';
 
 class FontAwesome {
-  static getIconData(iconName){
+  static getIconData(iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the FontAwesome",
+    );
     return FlutterIconData.fontAwesome(_fontAwesome[iconName]);
   }
 
-  static hasIconData(iconName)=>_fontAwesome.containsKey(iconName);
+  static hasIconData(iconName) => _fontAwesome.containsKey(iconName);
 
   static const glyphMaps = _fontAwesome;
 }
-const Map<String ,int> _fontAwesome = {
+
+const Map<String, int> _fontAwesome = {
   "glass": 61440,
   "music": 61441,
   "search": 61442,

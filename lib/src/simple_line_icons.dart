@@ -1,15 +1,20 @@
 import 'flutter_icon_data.dart';
 
 class SimpleLineIcons {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the SimpleLineIcons",
+    );
     return FlutterIconData.simpleLineIcons(_simpleLineIcons[iconName]);
   }
 
-  static hasIconData(iconName)=>_simpleLineIcons.containsKey(iconName);
+  static hasIconData(iconName) => _simpleLineIcons.containsKey(iconName);
 
   static const glyphMaps = _simpleLineIcons;
 }
-const Map<String,int> _simpleLineIcons = {
+
+const Map<String, int> _simpleLineIcons = {
   "user": 57349,
   "people": 57345,
   "user-female": 57344,

@@ -1,15 +1,20 @@
 import 'flutter_icon_data.dart';
 
 class Octicons {
-  static getIconData(String iconName){
+  static getIconData(String iconName) {
+    assert(
+      hasIconData(iconName),
+      "The icon $iconName does not exist in the Octicons",
+    );
     return FlutterIconData.octicons(_octicons[iconName]);
   }
 
-  static hasIconData(iconName)=>_octicons.containsKey(iconName);
+  static hasIconData(iconName) => _octicons.containsKey(iconName);
 
   static const glyphMaps = _octicons;
 }
-const Map<String,int> _octicons ={
+
+const Map<String, int> _octicons = {
   "alert": 61696,
   "archive": 61697,
   "arrow-down": 61698,
