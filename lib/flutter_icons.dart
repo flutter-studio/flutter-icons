@@ -13,6 +13,5 @@ export 'src/simple_line_icons.dart';
 export 'src/zocial.dart';
 export 'src/foundation.dart';
 export 'src/font_awesome_5.dart';
-export 'src/flutter_icon_data.dart' show IconWeight;
 export 'src/icon_toggle.dart';
 export 'src/weather_icons.dart';

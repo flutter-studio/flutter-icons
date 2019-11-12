@@ -40,53 +40,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  buildChildren() {
-    Map<String, dynamic> map = {
-      "AntDesign": AntDesign.glyphMaps,
-      "Entypo": Entypo.glyphMaps,
-      "EvilIcons": EvilIcons.glyphMaps,
-      "Feather":  Feather.glyphMaps,
-      "FontAwesome":FontAwesome.glyphMaps,
-      "Foundation": Foundation.glyphMaps,
-      "Ionicons": Ionicons.glyphMaps,
-      "MaterialCommunityIcons": MaterialCommunityIcons.glyphMaps,
-      "MaterialIcons": MaterialIcons.glyphMaps,
-      "Octicons": Octicons.glyphMaps,
-      "SimpleLineIcons": SimpleLineIcons.glyphMaps,
-      "Zocial":Zocial.glyphMaps,
-      "WeatherIcons": WeatherIcons.glyphMaps
-    };
-    List<Widget> widgets = [];
-    for (int i = 0; i < map.keys.length; i++) {
-      widgets.add(GestureDetector(
-        onTap: (){
-          Navigator.of(context).pushNamed("icon_page",arguments: {
-            "glyphMaps":map[map.keys.elementAt(i)],
-            "iconSetName":map.keys.elementAt(i)
-          });
-        },
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text(map.keys.elementAt(i)),
-              Spacer(),
-              Text(map[map.keys.elementAt(i)].length.toString()),
-              Icon(Icons.arrow_forward_ios)
-            ],
-          ),
-        ),
-      ));
-      if (i != map.keys.length - 1) {
-        widgets.add(Container(
-          height: 1,
-          color: Colors.black.withOpacity(0.3),
-        ));
-      }
-    }
-    return widgets;
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: buildChildren(),
+          children: [
+            Icon(AntDesign.login)
+          ],
         ),
       ),
     );

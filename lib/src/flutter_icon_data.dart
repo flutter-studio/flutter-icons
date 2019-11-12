@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-enum IconWeight { Regular, Solid, Brand }
-
 class FlutterIconData extends IconData {
   const FlutterIconData(int codePoint, String fontFamily)
       : super(codePoint, fontFamily: fontFamily, fontPackage: "flutter_icons");
