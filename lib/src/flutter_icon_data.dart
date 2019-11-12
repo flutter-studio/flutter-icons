@@ -13,16 +13,11 @@ class FlutterIconData extends IconData {
   const FlutterIconData.fontAwesome(int codePoint)
       : this(codePoint, "FontAwesome");
 
-  const FlutterIconData.fontAwesome5(int codePoint,
-      {IconWeight weight = IconWeight.Regular})
-      : this(
-          codePoint,
-          weight == IconWeight.Brand
-              ? "FontAwesome5_Brands"
-              : weight == IconWeight.Solid
-                  ? "FontAwesome5_Solid"
-                  : "FontAwesome5",
-        );
+  const FlutterIconData.fontAwesome5Brands(int codePoint):this(codePoint,"FontAwesome5_Brands");
+
+  const FlutterIconData.fontAwesome5(int codePoint):this(codePoint,"FontAwesome5");
+
+  const FlutterIconData.fontAwesome5Solid(int codePoint):this(codePoint,"FontAwesome5_Solid");
 
   const FlutterIconData.entypo(int codePoint) : this(codePoint, "Entypo");
 
