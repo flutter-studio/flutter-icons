@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under Feather
+///
+/// http://feathericons.com
 class Feather {
   static const IconData activity = const FlutterIconData.feather(59648);
   static const IconData airplay = const FlutterIconData.feather(59649);

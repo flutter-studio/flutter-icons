@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under MaterialIcons
+///
+/// https://www.google.com/design/icons/
 class MaterialIcons {
   static const IconData $3d_rotation =
       const FlutterIconData.materialIcons(59469);

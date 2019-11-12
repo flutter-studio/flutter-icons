@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under Octicons
+///
+/// http://octicons.github.com
 class Octicons {
   static const IconData alert = const FlutterIconData.octicons(61696);
   static const IconData archive = const FlutterIconData.octicons(61697);

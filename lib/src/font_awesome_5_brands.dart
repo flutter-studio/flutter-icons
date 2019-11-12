@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under FontAwesome5(Brand)
+///
+/// https://fontawesome.com
 class FontAwesome5Brands {
   static const IconData $500px =
       const FlutterIconData.fontAwesome5Brands(62062);

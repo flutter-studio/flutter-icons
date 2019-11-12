@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under Foundation
+///
+/// http://zurb.com/playground/foundation-icon-fonts-3
 class Foundation {
   static const IconData address_book = const FlutterIconData.foundation(61696);
   static const IconData alert = const FlutterIconData.foundation(61697);

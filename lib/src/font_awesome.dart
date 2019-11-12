@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under FontAwesome
+///
+/// http://fortawesome.github.io/Font-Awesome/icons/
 class FontAwesome {
   static const IconData glass = const FlutterIconData.fontAwesome(61440);
   static const IconData music = const FlutterIconData.fontAwesome(61441);

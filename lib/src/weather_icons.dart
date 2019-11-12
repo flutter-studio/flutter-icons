@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under WeatherIcons
+///
+/// https://erikflowers.github.io/weather-icons/
 class WeatherIcons {
   static const IconData wi_day_sunny =
       const FlutterIconData.weatherIcons(61453);

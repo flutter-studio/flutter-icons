@@ -1,8 +1,4 @@
-///
-///
-/// 自定义的bool选择组件
-///
-///
+
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all icons under Entypo
+///
+/// http://entypo.com
 class Entypo {
   static const IconData $500px = const FlutterIconData.entypo(61696);
   static const IconData $500px_with_circle =

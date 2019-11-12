@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'flutter_icon_data.dart';
 
+/// all Icons under FontAwesome5(Regular)
+///
+/// https://fontawesome.com
 class FontAwesome5 {
   static const IconData address_book =
       const FlutterIconData.fontAwesome5(62137);
