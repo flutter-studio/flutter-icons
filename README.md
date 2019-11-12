@@ -45,23 +45,6 @@ To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml fi
 | transitionBuilder | Transition animation function between the selected Icon and the unselected Icon |
 
 
-
-## Static Methods
-
-| Prop                 | Description                                                                                                                                                                               |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`getIconData`**  | Returns the IconData object,eg : ```IconData iconData = AntDesign.getIconData("stepforward")``` |
-| **`hasIconData`**  | Checks if the name is valid in current icon set.eg: ```bool isNameValid = AntDesign.hasIconData("stepforward")```|
-
-
-## IconExplorer
-
-Try to run the `example` project Or download [apk](https://github.com/flutter-studio/flutter-icons/tree/master/example/apk/app-release.apk), there you can also search for any icon.
-
-<div align=start>
-<img src="https://github.com/flutter-studio/flutter-icons/blob/master/example/Screenshot_1568714360.png" width = "200" alt="图片名称" align=center />
-  </div>
-
 ## Example
 
 ``` dart
@@ -69,12 +52,12 @@ Try to run the `example` project Or download [apk](https://github.com/flutter-st
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
-Icon(Ionicons.getIconData("ios-search"));
-Icon(AntDesign.getIconData("stepforward"));
-Icon(FontAwesome.getIconData("glass"));
-Icon(MaterialIcons.getIconData("ac-unit"));
-Icon(FontAwesome5.getIconData("address-book"));
-Icon(FontAwesome5.getIconData("address-book",weight: IconWeight.Solid));
-Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand));
+Icon(AntDesign.stepforward),
+Icon(Ionicons.ios_search),
+Icon(FontAwesome.glass),
+Icon(MaterialIcons.ac_unit),
+Icon(FontAwesome5.address_book),
+Icon(FontAwesome5Solid.address_book),
+Icon(FontAwesome5Brands.$500px)
 ```
 ### Special thanks to react native vector ICONS library and its authors

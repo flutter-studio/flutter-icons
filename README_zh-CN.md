@@ -27,13 +27,6 @@
 ## 使用
 要使用此插件包,请将flutter_icons作为依赖项添加到您的`pubspec.yaml`文件中,详见[dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
-## 静态方法
-
-| Prop                 | Description                                                                                                                                                                               |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`getIconData`**  | 返回IconData对象供Icon使用,eg : ```IconData iconData = AntDesign.getIconData("stepforward")``` |
-| **`hasIconData`**  | 检查是否存在name对应的IconData对象，返回布尔值，eg: ```bool isNameValid = AntDesign.hasIconData("stepforward")```|
-
 ## 示例
 
 ``` dart
@@ -41,12 +34,12 @@
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
-Icon(Ionicons.getIconData("ios-search"));
-Icon(AntDesign.getIconData("stepforward"));
-Icon(FontAwesome.getIconData("glass"));
-Icon(MaterialIcons.getIconData("ac-unit"));
-Icon(FontAwesome5.getIconData("address-book"));
-Icon(FontAwesome5.getIconData("address-book",weight: IconWeight.Solid));
-Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand));
+Icon(AntDesign.stepforward),
+Icon(Ionicons.ios_search),
+Icon(FontAwesome.glass),
+Icon(MaterialIcons.ac_unit),
+Icon(FontAwesome5.address_book),
+Icon(FontAwesome5Solid.address_book),
+Icon(FontAwesome5Brands.$500px)
 ```
 ### 特别感谢react-native-vector-icons插件包及其开发者们
