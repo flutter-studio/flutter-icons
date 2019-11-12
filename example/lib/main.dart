@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'ant_design_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,10 +21,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Icons Explorer'),
-      routes: {
-        "icon_page":(_)=>AntDesignPage()
-      },
+      home: MyHomePage(title: 'Flutter Icons'),
     );
   }
 }
@@ -60,7 +56,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Icon(AntDesign.login)
+            Icon(AntDesign.stepforward),
+            Icon(Ionicons.ios_search),
+            Icon(FontAwesome.glass),
+            Icon(MaterialIcons.ac_unit),
+            Icon(FontAwesome5.address_book),
+            Icon(FontAwesome5Solid.address_book),
+            Icon(FontAwesome5Brands.$500px)
           ],
         ),
       ),
