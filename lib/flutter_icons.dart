@@ -13,5 +13,7 @@ export 'src/simple_line_icons.dart';
 export 'src/zocial.dart';
 export 'src/foundation.dart';
 export 'src/font_awesome_5.dart';
+export 'src/font_awesome_5_solid.dart';
+export 'src/font_awesome_5_brands.dart';
 export 'src/icon_toggle.dart';
 export 'src/weather_icons.dart';
