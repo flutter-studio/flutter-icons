@@ -6,6 +6,11 @@ English | [简体中文](./README_zh-CN.md)
 
 Customizable Icons for Flutter,Inspired by [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
+## Notice
+>> 1. `v1.0.0` has major Api changes, please be careful to upgrade
+>> 2. icon names that begin with a number are preceded by a `$`prefix
+>> 3. icon named with the dart keyword have the `_` suffix added
+
 ## Bundled Icon Sets
 
 [Browse all](https://oblador.github.io/react-native-vector-icons/).
