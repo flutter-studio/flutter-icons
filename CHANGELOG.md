@@ -1,3 +1,6 @@
+## 1.0.0
+   * Refactored API
+
 ## 0.3.1
    * File movement and adding assertions
 
