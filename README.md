@@ -57,6 +57,7 @@ To use this plugin, add `flutter_icons` as a [dependency in your pubspec.yaml fi
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/material.dart';
 
+// 1.0.0 version used
 Icon(AntDesign.stepforward),
 Icon(Ionicons.ios_search),
 Icon(FontAwesome.glass),
@@ -64,5 +65,14 @@ Icon(MaterialIcons.ac_unit),
 Icon(FontAwesome5.address_book),
 Icon(FontAwesome5Solid.address_book),
 Icon(FontAwesome5Brands.$500px)
+
+// Previous versions of 1.0.0 are used
+Icon(Ionicons.getIconData("ios-search"));
+Icon(AntDesign.getIconData("stepforward"));
+Icon(FontAwesome.getIconData("glass"));
+Icon(MaterialIcons.getIconData("ac-unit"));
+Icon(FontAwesome5.getIconData("address-book"));
+Icon(FontAwesome5.getIconData("address-book",weight: IconWeight.Solid));
+Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand));
 ```
 ### Special thanks to react native vector ICONS library and its authors
