@@ -6,6 +6,11 @@
 
 在Flutter中使用可定制的图标，该插件包是受到 [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)启发而开发
 
+## 注意
+>> 1. 1.0.0版本API有很大变化，请谨慎升级
+>> 2. Icon名字以数字开头的前面加了`$`符号
+>> 3. Icon名字为dart关键字的后边加了下划线`_`
+
 ## 可用的图标
 
 [浏览所有](https://oblador.github.io/react-native-vector-icons/).
