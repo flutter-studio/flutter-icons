@@ -1,3 +1,6 @@
+## 1.0.0+1
+   * Enforce code robustness
+
 ## 1.0.0
    * Refactored API
 
