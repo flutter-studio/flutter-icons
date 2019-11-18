@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://simplelineicons.github.io/
 class SimpleLineIcons {
+  SimpleLineIcons._();
   static const IconData user = const FlutterIconData.simpleLineIcons(57349);
   static const IconData people = const FlutterIconData.simpleLineIcons(57345);
   static const IconData user_female =

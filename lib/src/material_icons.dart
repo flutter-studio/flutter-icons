@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://www.google.com/design/icons/
 class MaterialIcons {
+  MaterialIcons._();
   static const IconData $3d_rotation =
       const FlutterIconData.materialIcons(59469);
   static const IconData ac_unit = const FlutterIconData.materialIcons(60219);

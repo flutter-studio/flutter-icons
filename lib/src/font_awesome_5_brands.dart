@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://fontawesome.com
 class FontAwesome5Brands {
+  FontAwesome5Brands._();
   static const IconData $500px =
       const FlutterIconData.fontAwesome5Brands(62062);
   static const IconData accessible_icon =

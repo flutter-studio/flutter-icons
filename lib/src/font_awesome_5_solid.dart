@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://fontawesome.com
 class FontAwesome5Solid {
+  FontAwesome5Solid._();
   static const IconData ad = const FlutterIconData.fontAwesome5Solid(63041);
   static const IconData address_book =
       const FlutterIconData.fontAwesome5Solid(62137);

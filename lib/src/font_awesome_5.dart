@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://fontawesome.com
 class FontAwesome5 {
+  FontAwesome5._();
   static const IconData address_book =
       const FlutterIconData.fontAwesome5(62137);
   static const IconData address_card =

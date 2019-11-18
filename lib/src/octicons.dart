@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// http://octicons.github.com
 class Octicons {
+  Octicons._();
   static const IconData alert = const FlutterIconData.octicons(61696);
   static const IconData archive = const FlutterIconData.octicons(61697);
   static const IconData arrow_down = const FlutterIconData.octicons(61698);

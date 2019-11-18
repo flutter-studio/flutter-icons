@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// http://feathericons.com
 class Feather {
+  Feather._();
   static const IconData activity = const FlutterIconData.feather(59648);
   static const IconData airplay = const FlutterIconData.feather(59649);
   static const IconData alert_circle = const FlutterIconData.feather(59650);

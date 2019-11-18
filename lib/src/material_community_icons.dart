@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://ionicons.com/
 class MaterialCommunityIcons {
+  MaterialCommunityIcons._();
   static const IconData ab_testing =
       const FlutterIconData.materialCommunityIcons(983068);
   static const IconData access_point =

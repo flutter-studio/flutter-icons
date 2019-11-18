@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// http://fortawesome.github.io/Font-Awesome/icons/
 class FontAwesome {
+  FontAwesome._();
   static const IconData glass = const FlutterIconData.fontAwesome(61440);
   static const IconData music = const FlutterIconData.fontAwesome(61441);
   static const IconData search = const FlutterIconData.fontAwesome(61442);

@@ -5,6 +5,7 @@ import 'flutter_icon_data.dart';
 ///
 /// https://ionicons.com/
 class Ionicons {
+  Ionicons._();
   static const IconData ios_add = const FlutterIconData.ionicons(61698);
   static const IconData ios_add_circle = const FlutterIconData.ionicons(61697);
   static const IconData ios_add_circle_outline =
