@@ -4,6 +4,7 @@
 
 .packages
 .pub/
+*.lock
 
 build/
 ios/.generated/
