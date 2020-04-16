@@ -1,3 +1,6 @@
+## 1.1.0
+   * The FlutterIcons class is provided to access all Icons
+
 ## 1.0.0+1
    * Enforce code robustness
 
