@@ -46,5 +46,26 @@ Icon(MaterialIcons.ac_unit),
 Icon(FontAwesome5.address_book),
 Icon(FontAwesome5Solid.address_book),
 Icon(FontAwesome5Brands.$500px)
+
+// 1.1.0之后提供了FlutterIcons类访问所有的图标
+// 图标名称在原有的基础上添加了图标集简称名称作为后缀
+// 简称如下
+//Ant Design Icons -> ant,
+//Entypo Icons -> ent,
+//Evil Icons -> evi,
+//Feather Icons -> fea,
+//Font Awesome Icons -> faw,
+//Foundation Icons -> fou,
+//Ionicons Icons -> ion,
+//Material Community Icons -> mco,
+//Material Icons -> mdi,
+//Octicons Icons -> oct,
+//Simple Line Icons -> sli,
+//Zocial Icons -> zoc,
+//Weather Icons -> wea
+Icon(FlutterIcons.stepforward_ant)
+Icon(FlutterIcons.html5_faw)
+...
+
 ```
 ### 特别感谢react-native-vector-icons插件包及其开发者们

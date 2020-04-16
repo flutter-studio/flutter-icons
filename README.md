@@ -66,6 +66,26 @@ Icon(FontAwesome5.address_book),
 Icon(FontAwesome5Solid.address_book),
 Icon(FontAwesome5Brands.$500px)
 
+// After 1.1.0, the FlutterIcons class is provided to access all Icons
+// Icon name in the original basis added icon set abbreviation name as suffix
+// Hereinafter referred to as the following
+//Ant Design Icons -> ant,
+//Entypo Icons -> ent,
+//Evil Icons -> evi,
+//Feather Icons -> fea,
+//Font Awesome Icons -> faw,
+//Foundation Icons -> fou,
+//Ionicons Icons -> ion,
+//Material Community Icons -> mco,
+//Material Icons -> mdi,
+//Octicons Icons -> oct,
+//Simple Line Icons -> sli,
+//Zocial Icons -> zoc,
+//Weather Icons -> wea
+Icon(FlutterIcons.stepforward_ant)
+Icon(FlutterIcons.html5_faw)
+...
+
 // Previous versions of 1.0.0 are used
 Icon(Ionicons.getIconData("ios-search"));
 Icon(AntDesign.getIconData("stepforward"));
