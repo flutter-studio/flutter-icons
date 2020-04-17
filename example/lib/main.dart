@@ -62,7 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
             Icon(MaterialIcons.ac_unit),
             Icon(FontAwesome5.address_book),
             Icon(FontAwesome5Solid.address_book),
-            Icon(FontAwesome5Brands.$500px)
+            Icon(FontAwesome5Brands.$500px),
+            Icon(FlutterIcons.$500px_ent),
+            Icon(FlutterIcons.$500px_faw5d),
+            Icon(WeatherIcons.wi_alien),
+            Icon(WeatherIcons.wi_cloud),
+            Icon(WeatherIcons.wi_day_rain)
           ],
         ),
       ),
