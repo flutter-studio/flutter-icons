@@ -27,6 +27,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # split_icon: ^0.2.0  
 
 flutter_icons:
   includes:
