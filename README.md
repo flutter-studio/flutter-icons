@@ -74,6 +74,9 @@ Icon(FontAwesome5Brands.$500px)
 //Evil Icons -> evi,
 //Feather Icons -> fea,
 //Font Awesome Icons -> faw,
+//Font Awesome 5 Regular -> faw5
+//Font Awesome 5 Solid -> faw5s
+//Font Awesome 5 Brands -> faw5b
 //Foundation Icons -> fou,
 //Ionicons Icons -> ion,
 //Material Community Icons -> mco,
@@ -95,4 +98,38 @@ Icon(FontAwesome5.getIconData("address-book"));
 Icon(FontAwesome5.getIconData("address-book",weight: IconWeight.Solid));
 Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand));
 ```
-### Special thanks to react native vector ICONS library and its authors
+
+### How to keep only the fonts used in the project.
+
+##### step 1
+Execute the command`pub global activate split_icon`
+##### step2
+Add the font you want to leave in the project's pubspec file
+```
+//Ant Design Icons -> ant,
+//Entypo Icons -> ent,
+//Evil Icons -> evi,
+//Feather Icons -> fea,
+//Font Awesome Icons -> faw,
+//Font Awesome 5 Regular -> faw5
+//Font Awesome 5 Solid -> faw5s
+//Font Awesome 5 Brands -> faw5b
+//Foundation Icons -> fou,
+//Ionicons Icons -> ion,
+//Material Community Icons -> mco,
+//Material Icons -> mdi,
+//Octicons Icons -> oct,
+//Simple Line Icons -> sli,
+//Zocial Icons -> zoc,
+//Weather Icons -> wea
+...
+flutter_icons:
+  includes:
+    -ant 
+    -mco
+    ....
+ ```
+    
+##### step3
+Execute the command in the project directory`split_icon`
+
