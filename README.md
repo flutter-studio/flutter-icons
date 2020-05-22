@@ -101,11 +101,14 @@ Icon(FontAwesome5.getIconData("500px", weight: IconWeight.Brand));
 
 ### How to keep only the fonts used in the project.
 
-##### step 1
-Execute the command`pub global activate split_icon`
-##### step2
-Add the font you want to leave in the project's pubspec file
+#### step 1
+Execute the command
 ```
+pub global activate split_icon
+```
+#### step2
+Add the font you want to leave in the project's pubspec file
+```dart
 //Ant Design Icons -> ant,
 //Entypo Icons -> ent,
 //Evil Icons -> evi,
@@ -122,14 +125,19 @@ Add the font you want to leave in the project's pubspec file
 //Simple Line Icons -> sli,
 //Zocial Icons -> zoc,
 //Weather Icons -> wea
+
 ...
+
 flutter_icons:
   includes:
     -ant 
     -mco
-    ....
+ ...
  ```
     
-##### step3
-Execute the command in the project directory`split_icon`
+#### step3
+Execute the command in the project directory
+``` 
+split_icon
+```
 
