@@ -130,8 +130,8 @@ Add the font you want to leave in the project's pubspec file
 
 flutter_icons:
   includes:
-    -ant 
-    -mco
+    - ant 
+    - mco
  ...
  ```
     
