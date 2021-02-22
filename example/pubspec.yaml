@@ -8,9 +8,9 @@ description: A new Flutter application.
 # build by specifying --build-name and --build-number, respectively.
 # Read more about versioning at semver.org.
 version: 1.0.0+1
-
+publish_to: none
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0-0 <3.0.0"
 
 dependencies:
   flutter:
@@ -20,14 +20,14 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   flutter_icons:
-#    path: ../
-     git:
-       url: https://github.com/flutter-studio/flutter-icons.git
-       ref: 1.1.0
+    path: ..//
+    # git:
+    #   url: https://github.com/flutter-studio/flutter-icons.git
+    #   ref: 1.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  # split_icon: ^0.2.0  
+  # split_icon: ^0.2.0
 
 flutter_icons:
   includes:
@@ -37,7 +37,6 @@ flutter_icons:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
