@@ -1,33 +1,48 @@
+## 1.1.1-nullsafety.0
+
+- Migrated package and sample to Null Safety
+- Bumped up package version
+
 ## 1.1.0
-   * The FlutterIcons class is provided to access all Icons
+
+- The FlutterIcons class is provided to access all Icons
 
 ## 1.0.0+1
-   * Enforce code robustness
+
+- Enforce code robustness
 
 ## 1.0.0
-   * Refactored API
+
+- Refactored API
 
 ## 0.3.1
-   * File movement and adding assertions
+
+- File movement and adding assertions
 
 ## 0.3.0
-   * WeatherIcons added
+
+- WeatherIcons added
 
 ## 0.2.5
-   * IconToggle added
+
+- IconToggle added
 
 ## 0.2.0
-   * FontAwesome5_Free added
+
+- FontAwesome5_Free added
 
 ## 0.1.5
-   * Update MaterialCommunityIcons to version 4.0.96
+
+- Update MaterialCommunityIcons to version 4.0.96
 
 ## 0.1.4
-   * Add hasIconData method
+
+- Add hasIconData method
 
 ## 0.1.3
-   * Foundation added
-   
+
+- Foundation added
+
 ## 0.1.0
 
-   * This library contains several icon libraries, including the well-known ant-design icon library, material icon library, and so on
+- This library contains several icon libraries, including the well-known ant-design icon library, material icon library, and so on
