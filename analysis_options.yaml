@@ -9,9 +9,9 @@
 # packages, and plugins designed to encourage good coding practices.
 include: package:lints/recommended.yaml
 
-# analyzer:
-#   errors:
-#     missing_return: ignore
+analyzer:
+  exclude:
+    - example/**
 
 linter:
   # The lint rules applied to this project can be customized in the
@@ -26,9 +26,7 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
-    avoid_print: false
     constant_identifier_names: false
-    prefer_single_quotes: false
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
