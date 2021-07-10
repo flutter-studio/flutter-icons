@@ -1,6 +1,5 @@
-import 'dart:async';
 import 'dart:io';
-import 'file:///Users/makisu/flutter-icons/test/a.dart';
+
 //void main() async {
 //  File file = File("././lib/src/a.dart");
 //  if (!file.existsSync())
@@ -2957,5 +2956,3 @@ const Map<String, int> _fontAwesome5 = {
   "youtube-square": 62513,
   "zhihu": 63039
 };
-
-
