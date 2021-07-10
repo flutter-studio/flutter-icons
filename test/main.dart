@@ -12,7 +12,7 @@ class FlutterIcons {
   ''';
   for(var i=0;i<files.length;i++){
     final File file = files[i];
-    if(file.path.indexOf("flutter_icon") == -1 && file.path.indexOf("icon_toggle") == -1){
+    if(!file.path.contains("flutter_icon") && !file.path.contains("icon_toggle")){
       final  List<String> lines = file.readAsLinesSync();
       for(var k=0;k<lines.length;k++){
         final String line = lines[k];
@@ -38,20 +38,13 @@ String getSimple(String line){
   print(line);
   var name1 = line.split(".")[1];
   var name = name1.split("(")[0];
-  if(name == 'materialCommunityIcons')
-  return 'mco';
-  if(name == 'materialIcons')
-  return 'mdi';
-  if(name == 'simpleLineIcons')
-  return 'sli';
-  if(name == 'fontAwesome')
-  return 'faw';
-  if(name == 'fontAwesome5')
-  return 'faw5';
-  if(name == 'fontAwesome5Solid')
-  return 'faw5s';
-  if(name == 'fontAwesome5Brands')
-  return 'faw5d';
+  if(name == 'materialCommunityIcons') return 'mco';
+  if(name == 'materialIcons') return 'mdi';
+  if(name == 'simpleLineIcons') return 'sli';
+  if(name == 'fontAwesome') return 'faw';
+  if(name == 'fontAwesome5') return 'faw5';
+  if(name == 'fontAwesome5Solid') return 'faw5s';
+  if(name == 'fontAwesome5Brands') return 'faw5d';
   return name.substring(0,3).toLowerCase();
 }
 enum IconLib {
