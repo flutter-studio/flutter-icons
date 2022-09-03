@@ -1,6 +1,4 @@
-import 'dart:async';
 import 'dart:io';
-import 'file:///Users/makisu/flutter-icons/test/a.dart';
 //void main() async {
 //  File file = File("././lib/src/a.dart");
 //  if (!file.existsSync())
@@ -43,13 +41,15 @@ import 'file:///Users/makisu/flutter-icons/test/a.dart';
 //  file.writeAsStringSync(allStr);
 //}
 
-String toCamelName(String name)=>name.split("_").map((e)=>"${e.substring(0,1).toUpperCase()}${
-    e.substring(1)
-}").toList().join("");
+String toCamelName(String name) => name
+    .split("_")
+    .map((e) => "${e.substring(0, 1).toUpperCase()}${e.substring(1)}")
+    .toList()
+    .join("");
 
-String toName(String name){
+String toName(String name) {
   String _name = toCamelName(name);
-  return "${_name.substring(0,1).toLowerCase()}${_name.substring(1)}";
+  return "${_name.substring(0, 1).toLowerCase()}${_name.substring(1)}";
 }
 
 //void main(){
@@ -72,26 +72,25 @@ String toName(String name){
 //  }
 //}
 
-void main(){
-  Map<String,dynamic> _gly = _fontAwesome5_meta;
+void main() {
+  Map<String, dynamic> _gly = _fontAwesome5_meta;
   List<String> keys = _gly.keys.toList();
-  for(int i=0;i<keys.length;i++){
+  for (int i = 0; i < keys.length; i++) {
     File file = File("././lib/font_awesome_5_${keys[i]}.dart");
-    if(!file.existsSync())file.createSync();
+    if (!file.existsSync()) file.createSync();
     String allStr = """
     import 'package:flutter/material.dart';
     import 'flutter_icon_data.dart';""";
     allStr += "class ${toCamelName("font_awesome_5_${keys[i]}")} { \n";
     List<String> obj = _gly[keys[i]];
-    for(int j=0;j<obj.length;j++){
-      allStr += "static const IconData ${obj[j].replaceAll("-", "_")} = const FlutterIconData.${toName("font_awesome_5_${keys[i]}")}(${_fontAwesome5[obj[j]]});\n";
+    for (int j = 0; j < obj.length; j++) {
+      allStr +=
+          "static const IconData ${obj[j].replaceAll("-", "_")} = const FlutterIconData.${toName("font_awesome_5_${keys[i]}")}(${_fontAwesome5[obj[j]]});\n";
     }
     allStr += "}";
     file.writeAsStringSync(allStr);
   }
 }
-
-
 
 const Map<String, List<String>> _fontAwesome5_meta = {
   "brands": [
@@ -2957,5 +2956,3 @@ const Map<String, int> _fontAwesome5 = {
   "youtube-square": 62513,
   "zhihu": 63039
 };
-
-
