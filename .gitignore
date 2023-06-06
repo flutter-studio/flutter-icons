@@ -11,7 +11,8 @@ ios/.generated/
 ios/Flutter/Generated.xcconfig
 ios/Runner/GeneratedPluginRegistrant.*
 
-
+# Flutter FVM
+.fvm/flutter_sdk
 node_modules/
 package-lock.json
 
