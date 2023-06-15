@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -36,7 +36,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -57,17 +56,17 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Icon(AntDesign.stepforward),
-//            Icon(Ionicons.ios_search),
-//            Icon(FontAwesome.glass),
-//            Icon(MaterialIcons.ac_unit),
-//            Icon(FontAwesome5.address_book),
-//            Icon(FontAwesome5Solid.address_book),
-//            Icon(FontAwesome5Brands.$500px),
-//            Icon(FlutterIcons.$500px_ent),
-//            Icon(FlutterIcons.$500px_faw5d),
-//            Icon(WeatherIcons.wi_alien),
-//            Icon(WeatherIcons.wi_cloud),
-//            Icon(WeatherIcons.wi_day_rain)
+            Icon(Ionicons.ios_search),
+            Icon(FontAwesome.glass),
+            Icon(MaterialIcons.ac_unit),
+            Icon(FontAwesome5.address_book),
+            Icon(FontAwesome5Solid.address_book),
+            Icon(FontAwesome5Brands.$500px),
+            Icon(FlutterIcons.$500px_ent),
+            Icon(FlutterIcons.$500px_faw5d),
+            Icon(WeatherIcons.wi_alien),
+            Icon(WeatherIcons.wi_cloud),
+            Icon(WeatherIcons.wi_day_rain)
           ],
         ),
       ),
