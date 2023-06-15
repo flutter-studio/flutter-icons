@@ -14,7 +14,7 @@ class IconToggle extends StatefulWidget {
     this.activeColor = Colors.blue,
     this.inactiveColor = Colors.grey,
     this.value = false,
-    required this.onChanged,
+    this.onChanged,
     this.transitionBuilder = _defaultTransitionBuilder,
     this.duration = const Duration(milliseconds: 100),
     this.reverseDuration = const Duration(milliseconds: 50),
@@ -24,7 +24,7 @@ class IconToggle extends StatefulWidget {
   final Color activeColor;
   final Color inactiveColor;
   final bool value;
-  final ValueChanged<bool> onChanged;
+  final ValueChanged<bool>? onChanged;
   final AnimatedSwitcherTransitionBuilder transitionBuilder;
   final Duration duration;
   final Duration reverseDuration;
@@ -48,7 +48,7 @@ class _IconToggleState extends State<IconToggle>
     _position = CurvedAnimation(parent: _controller, curve: Curves.linear);
     _position.addStatusListener((status) {
       if (status == AnimationStatus.dismissed && _cancel == false) {
-        widget.onChanged(!widget.value);
+        widget.onChanged!(!widget.value);
       }
     });
   }
@@ -124,11 +124,11 @@ class _IconToggleable<T> extends AnimatedWidget {
 
 class _IconPainter extends CustomPainter {
   _IconPainter({
-    this.position = const AlwaysStoppedAnimation(0.0),
+    required this.position,
     required this.activeColor,
     required this.inactiveColor,
   });
-  final Animation<double> position;
+  final position;
   final Color activeColor;
   final Color inactiveColor;
 
